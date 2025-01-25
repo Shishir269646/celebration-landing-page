@@ -23,10 +23,10 @@ function Banner() {
                 {/* Hero Content */}
                 <div className="hero-content flex-col lg:flex-row-reverse relative z-10">
                     <div>
-                        <h1 class="text-neutral-50 text-[80px] font-normal font-mauline leading-[104px]">
+                        <h1 className="text-neutral-50 text-[80px] font-normal font-mauline leading-[104px]">
                             Ready for an
                             <br />
-                            <span class="text-[#ffd6e4] text-[80px] font-normal font-['Mauline'] leading-[104px]">
+                            <span className="text-[#ffd6e4] text-[80px] font-normal font-['Mauline'] leading-[104px]">
                                 Unforgettable
                             </span> Wedding?
                         </h1>
