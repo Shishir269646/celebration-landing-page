@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 import logoImg from '../../public/images/GG Logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -69,8 +69,13 @@ const Footer = () => {
     setShowAlert(true);
   };
 
+  const [currentYear, setCurrentYear] = useState(null);
 
-  const currentYear = new Date().getFullYear();
+    useEffect(() => {
+        const year = new Date().getFullYear();
+        setCurrentYear(year);
+    }, [])
+  
 
   return (
     <footer className="bg-[#0d0d0d] text-center text-neutral-50 dark:bg-neutral-600 dark:text-neutral-200">
