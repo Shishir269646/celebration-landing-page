@@ -1,5 +1,5 @@
 "use client"
-import React, { useState} from "react";
+import React, { useState } from "react";
 import Image from 'next/image';
 import logoImg from '../../public/images/GG Logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +12,7 @@ import { faFacebookF, faInstagram, faLinkedin, faTwitter } from "@fortawesome/fr
 
 
 
-const Footer = ({ currentYear }) => {
+const Footer = () => {
 
   const socialLinks = [
     {
@@ -32,7 +32,7 @@ const Footer = ({ currentYear }) => {
       smIcon: faLinkedin,
     },
   ];
-  
+
   const sections = [
     {
       title: 'Adventures',
@@ -69,8 +69,8 @@ const Footer = ({ currentYear }) => {
     setShowAlert(true);
   };
 
-  
 
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#0d0d0d] text-center text-neutral-50 dark:bg-neutral-600 dark:text-neutral-200">
@@ -78,15 +78,15 @@ const Footer = ({ currentYear }) => {
       <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="flex justify-center items-center">
           {socialLinks.map(({ href, smIcon }, index) => (
-            
-              <FontAwesomeIcon 
+
+            <FontAwesomeIcon
               key={index}
               className="mr-6 h-6 w-6 text-neutral-50 dark:text-neutral-200"
               icon={smIcon}
               href="#!"
-              />
-              
-            
+            />
+
+
           ))}
         </div>
       </div>
@@ -132,7 +132,7 @@ const Footer = ({ currentYear }) => {
             {/*Alart*/}
             {showAlert && (
               <div role="alert" className="alert w-auto alert-success fixed flex">
-                <FontAwesomeIcon className="h-6 w-6 shrink-0 stroke-current" icon={faCircleCheck}/>
+                <FontAwesomeIcon className="h-6 w-6 shrink-0 stroke-current" icon={faCircleCheck} />
                 <span className="font-maiandraGd">Sign up successfully!</span>
               </div>
 

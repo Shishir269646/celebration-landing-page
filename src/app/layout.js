@@ -58,7 +58,7 @@ const mauline = localFont({
 export default function RootLayout({ children }) {
 
 
-  const currentYear = new Date().getFullYear();
+
 
 
 
@@ -71,8 +71,8 @@ export default function RootLayout({ children }) {
         <div className="min-h-screen overflow-auto">
           <Navbar />
           {children}
-          {currentYear && <Footer currentYear={currentYear} />}
-         
+          <Footer />
+
         </div>
       </body>
     </html>
