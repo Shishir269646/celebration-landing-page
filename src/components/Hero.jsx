@@ -3,10 +3,13 @@
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Image from "next/image";
+import HeroBg from '../../public/images/Hero BG.jpg'
 
 const Hero = () => {
     return (
-        <div className="hero min-h-screen heroBg">
+        <div className="hero min-h-screen">
+            <Image src={HeroBg} alt="Hero Bg Image"/>
             <div className="hero-overlay bg-opacity-15"></div>
             <div className="hero-content text-neutral-content text-center">
                 <div className="max-w-[70%]">
