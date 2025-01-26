@@ -69,8 +69,8 @@ const Footer = () => {
     setShowAlert(true);
   };
 
-  
-  
+
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#0d0d0d] text-center text-neutral-50 dark:bg-neutral-600 dark:text-neutral-200">
@@ -174,7 +174,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="bg-[#0d0d0d] font-maiandraGd p-6 text-center dark:bg-neutral-700 flex justify-center items-center">
-        <span>© 2025 Copyright: </span>
+        <span>© {currentYear} Copyright: </span>
         <a className="mx-3" href="#">
           <Image
             src={logoImg}

@@ -1,12 +1,13 @@
 "use client";
+import React from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+
 import logoImg from "../../public/images/GG Logo.png";
 
 function Navbar() {
-    const [isSticky, setIsSticky] = useState(false);
+
 
     const navName = [
         { href: "#features", secName: "Features" },
@@ -24,24 +25,12 @@ function Navbar() {
         }
     };
 
-    // Sticky navbar logic
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsSticky(window.scrollY > 300);
-        };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
 
     return (
         <div>
-            {/* Sticky Navbar */}
-            <div
-                className={`navbar bg-base-100 ${isSticky ? "sticky top-0 z-50 shadow-lg" : ""}`}
-            >
+           
+            <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -90,6 +79,8 @@ function Navbar() {
                     </a>
                 </div>
             </div>
+
+            
         </div>
     );
 }

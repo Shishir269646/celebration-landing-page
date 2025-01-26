@@ -8,6 +8,7 @@ import Faq from "@/components/Faq";
 import Banner from "@/components/Banner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointUp } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "@/components/Navbar";
 
 
 
@@ -48,9 +49,12 @@ export default function Home() {
           title="Go to top"
         >
           Top
-          <FontAwesomeIcon icon={faHandPointUp}/>
+          <FontAwesomeIcon icon={faHandPointUp} />
         </button>
       )}
+      
+        <Navbar />
+     
 
 
       <Hero />
@@ -59,7 +63,7 @@ export default function Home() {
       <CelebrationSection />
       <Faq />
       <Banner />
-      
+
     </div>
   );
 }
