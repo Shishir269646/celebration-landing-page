@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "@/components/Hero";
 import FreeAccessBanner from "@/components/FreeAccessBanner";
 import GuestsMind from "@/components/GuestsMind";
@@ -16,28 +16,34 @@ export default function Home() {
 
   const [showBtn, setShowBtn] = useState(false);
 
+  useEffect(() => {
+    const scrollFunction = () => {
+      if (
+        document.body.scrollTop > 20 || // For Safari
+        document.documentElement.scrollTop > 20 // For other browsers
+      ) {
+        setShowBtn(true);
+      } else {
+        setShowBtn(false);
+      }
+    };
 
-  window.onscroll = function () {
-    scrollFunction();
+    // Add the scroll event listener when the component mounts
+    window.addEventListener("scroll", scrollFunction);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", scrollFunction);
+    };
+  }, []);
+
+  const topFunction = () => {
+    // Scroll to the top of the page
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling
+    });
   };
-
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      setShowBtn(true);
-    } else {
-      setShowBtn(false);
-    }
-  }
-
-
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-
 
 
   return (
