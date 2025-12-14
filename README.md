@@ -96,7 +96,7 @@ The project follows a standard Next.js application structure:
 
 ## Screenshots
 
-I am an AI and cannot directly generate or display screenshots. You provided a local path: `C:\MERN Project\celebration-landing-page\screenshort.png`.
+I am an AI and cannot directly generate or display screenshots. You provided a local path: `.\screenshort.png`.
 
 To include this screenshot (or others) in the README:
 
