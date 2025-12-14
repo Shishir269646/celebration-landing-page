@@ -107,7 +107,8 @@ To include this screenshot (or others) in the README:
     ```
     For example:
     ```markdown
-    ![Celebration Landing Page Desktop View](https://i.imgur.com/your-screenshot.png)
+    ![Celebration Landing Page Desktop View](.\screenshort.png)
+    
     ```
     
 
