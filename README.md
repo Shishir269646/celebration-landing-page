@@ -96,14 +96,18 @@ The project follows a standard Next.js application structure:
 
 ## Screenshots
 
-I am an AI and cannot directly generate or display screenshots. You provided a local path: `(https://github.com/Shishir269646/celebration-landing-page/blob/main/screenshort.png)`.
+I am an AI and cannot directly generate or display screenshots. You provided a local path: `C:\MERN Project\celebration-landing-page\screenshort.png`.
 
 To include this screenshot (or others) in the README:
 
 1.  **Upload your screenshot(s)** to a public image hosting service (e.g., GitHub's image hosting for issues/PRs, Imgur, etc.).
 2.  **Replace this section** with your actual screenshots, using Markdown image syntax:
     ```markdown
-    ![Alt text for your screenshot]((https://github.com/Shishir269646/celebration-landing-page/blob/main/screenshort.png))
+    ![Alt text for your screenshot](<URL_to_your_hosted_image>)
+    ```
+    For example:
+    ```markdown
+    ![Celebration Landing Page Desktop View](https://i.imgur.com/your-screenshot.png)
     ```
     
 
