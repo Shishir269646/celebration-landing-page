@@ -25,7 +25,7 @@ A modern, responsive, and feature-rich landing page designed for celebrating spe
 
 ## Live Demo
 
-[Link to live demo](https://celebration-landing-page-self.vercel.app/)
+[Link to live demo](https://celebration-landing-page.vercel.app)
 
 ## GitHub Repository
 
